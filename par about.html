@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./parlour.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="header">
+        <nav>
+         
+        <div class="navbar">
+          <img src="./photos/30.png" alt="" width="160px" height="140px">
+         
+        <ul class="ul" id="menulist">
+            <a href="./parlour.html"> <li>home</li></a>
+         <a href="./par about.html"><li>about</li></a>
+         <a href="./par services.html"><li>services</li></a>
+         <a href="./par contact.html"><li>contact</li></a>
+         <a href="./par form.html"><li><button class="btn"> book now </button></li></a>
+        </ul>
+       <div class="menu-icon">
+        <i class="fa fa-bars" onclick="toggleMenu()"></i>
+       </div>
+    
+        </div>
+        </nav>
+      </div>
+      <script>
+        let menulist = document.getElementById("menulist")
+        menulist.style.maxHeight= "0px";
+       
+        function toggleMenu(){
+          if( menulist.style.maxHeight= "0px"){
+            menulist.style.maxHeight= "300px";
+        }
+        else {
+          menulist.style.maxHeight= "0px";
+        }
+      }
+      </script>
+
+<div id="banner">
+    <div class="bar">
+     <div class="bar_1">
+         <br>    <br>
+         <h2> about us </h2>
+         <p> now we describe about our beauty parlour. </p>
+     </div>
+     <div class="bar_2">
+         <img src="./photos/26.jpg" width="300px" height="200px">
+     </div>
+    </div>
+     </div>
+ <div id="mission">
+     <div class="bar">
+         <div class="bar_3">
+             <img src="./photos/26.jpg" width="300px" height="200px">
+         </div>
+         <div class="bar_4">
+             <br>    <br>
+             <h2> our mission </h2>
+             <p> "our parlour is committed to providing a world class salon expirience to every client, every time. our creative team is dedicated to providing high quality services without compromising the integrity of your hair, skin, body, or nails while helping you to be your most beautiful you.the salon aims to develop strong relationship with its clients and satisfy all of their body needs. " </p>
+         </div>
+        
+    </div>
+     </div>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./parlour.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="header">
+        <nav>
+         
+        <div class="navbar">
+          <img src="./photos/30.png" alt="" width="160px" height="140px">
+         
+        <ul class="ul" id="menulist">
+            <a href="./parlour.html"> <li>home</li></a>
+            <a href="./par about.html"><li>about</li></a>
+            <a href="./par services.html"><li>services</li></a>
+            <a href="./par contact.html"><li>contact</li></a>
+            <a href="./par form.html"><li><button class="btn"> book now </button></li></a>
+        </ul>
+       <div class="menu-icon">
+        <i class="fa fa-bars" onclick="toggleMenu()"></i>
+       </div>
+    
+        </div>
+        </nav>
+      </div>
+      <script>
+        let menulist = document.getElementById("menulist")
+        menulist.style.maxHeight= "0px";
+       
+        function toggleMenu(){
+          if( menulist.style.maxHeight= "0px"){
+            menulist.style.maxHeight= "300px";
+        }
+        else {
+          menulist.style.maxHeight= "0px";
+        }
+      }
+      </script>
+       <div class="form">
+        <form>
+       <center> <fieldset class="fieldset"> 
+            <legend> BOOK NOW </legend>
+            <label for=""> Your Name </label>
+            <input type="text" placeholder=" john Doe" required></br></br>
+            <label for=""> Email id </label>
+            <input type="text" placeholder=" djshdkj@gmail.com "> </br> </br>
+            <label for=""> Phone Number </label>
+            <input type="text" placeholder=" 0331-1234567"> </br> </br>
+            <label for=""> Book Your Date </label>
+            <input type="date" placeholder=" Book Your Date " required> </br> </br>
+            <label for=""> Book Your Time </label>
+            <input type="time" placeholder=" Book Your Time" required></br> </br>
+            <label for="services"required> Services </label>
+            <select id="Services">
+                <option value="Services"> select service</option>
+                <option value="Makeup"> Makeup</option>
+                <option value="Hair styling"> Hair styling</option>
+                <option value="Eye brows"> Eye brows</option>
+                <option value="All services"> All services </option>
+            </select>
+        </br> </br>
+            <label for=""> Stylist </label>
+            <input type="text" placeholder=" stylist"> </br> </br>
+            <label for="Events"> Events </label>
+            <select id="Events">
+                <option value="Events"> select Event</option>
+                <option value="Wedding"> Wedding</option>
+                <option value="Walima"> Walima </option>
+                <option value="Mehndi"> Mehndi</option>
+                <option value="Engagment"> Engagment </option>
+                <option value="Party"> Party </option>
+            </select>
+        </br> </br>
+        <label for="No of brides"> No of brides </label>
+        <select id="No of brides">
+            <option value="No of brides"> select No</option>
+            <option value="1"> 1</option>
+            <option value="2"> 2 </option>
+            <option value="3"> 3</option>
+        </select>
+    </br> </br>    
+    <div class="inline">
+          <button type="submit"> Submit </button> &nbsp; &nbsp; &nbsp;
+           <button type="reset"> reset </button> </div> 
+        </fieldset>
+       </center>   
+    </form>
+        </div>
+</body>
+</html>

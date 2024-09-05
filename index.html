@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./parlour.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="header">
+        <nav>
+         
+        <div class="navbar">
+          <img src="./photos/30.png" alt="" width="160px" height="140px">
+         
+        <ul class="ul" id="menulist">
+        <a href="./parlour.html"> <li>home</li></a>
+         <a href="./par about.html"><li>about</li></a>
+         <a href="./par services.html"><li>services</li></a>
+         <a href="./par contact.html"><li>contact</li></a>
+         <a href="./par form.html"><li><button class="btn"> book now </button></li></a>
+        </ul>
+       <div class="menu-icon">
+        <i class="fa fa-bars" onclick="toggleMenu()"></i>
+       </div>
+    
+        </div>
+        </nav>
+      </div>
+      <script>
+        let menulist = document.getElementById("menulist")
+        menulist.style.maxHeight= "0px";
+       
+        function toggleMenu(){
+          if( menulist.style.maxHeight= "0px"){
+            menulist.style.maxHeight= "300px";
+        }
+        else {
+          menulist.style.maxHeight= "0px";
+        }
+      }
+      </script>
+
+<div id="section">
+    <div class="banner">
+       <div class="white"> <h3> Where </h3> </div> <div class="pink"> <h3> Beauty</h3> </div> <br>
+       <div class="whit"> <h3> Meets </h3> </div> <div class="pin"> <h3> Connection </h3> </div> <br>
+       <div class="whi"> <h5> connecting beauty </h5> </div> <div class="pi"> <h5> services to you </h5> </div>
+       <div class=" button">
+        <center>   <a href="./par form.html" target="_blank"><button class="btn_3"> BOOK NOW</button></center>
+     </div>
+     
+
+
+        </div>
+
+        </div>
+<div id="pp">
+<div class="uou">
+
+<center>        <h2> Our Beauty Services </h2> </center>
+       </div>
+    
+
+    <div class="box">
+<div class="box_1">
+<img src="./photos/23.jpg" alt="" width="250px" height="168px">
+ 
+  <h4> Make Up </h4>
+</div>
+<div class="box_2">
+<img src="./photos/20.jpg" alt="" width="250px" height="168px">
+<h4> Hair Styling </h4>
+</div>
+<div class="box_3">
+<img src="./photos/21.jpg" alt=""  width="250px" height="168px">
+<h4> Eyebrows </h4>
+
+</div>
+<div class="box_4">
+<img src="./photos/22.jpg" alt=""  width="250px" height="168px">
+<h4> Eyelashes </h4>
+</div>
+    </div>
+
+</div>
+</div>
+
+</body>
+</html>
